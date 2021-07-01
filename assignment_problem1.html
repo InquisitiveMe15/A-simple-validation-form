@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="assignment_problem1.css">
+    <script src="assignment_problem1.js"></script>
+</head>
+
+<body>
+    <!-- <header>Stay Home Stay Safe</header> -->
+    <div class="container">
+        <h3>Registration Form for the Covid Vaccination</h3>
+        <form action="backend.php" name="CovidRegistration" onsubmit="return Validation();">
+            <div class="form-elements">
+                <label for="firstname"></label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
+            </div>
+            <div class="form-elements">
+                <label for="secondname"></label>
+                <input type="text" name="secondname" id="secondname" placeholder="Enter your last name">
+            </div>
+            <div class="form-elements">
+                <label for="youremail"></label>
+                <input type="email" name="youremail" id="youremail" placeholder="Enter your email address">
+            </div>
+            <div class="form-elements">
+                <input type="password" name="yourpassword" id="yourpassword" placeholder="Enter a password"><br>
+                <strong>A password should be atleast 8 character long.</strong>
+            </div>
+            <div class="gender">
+                <label for="gender">Select your gender : </label>
+                Male <input type="radio" name="gender1" id="gender">
+                Female <input type="radio" name="gender2" id="gender">
+                Others <input type="radio" name="gender3" id="gender">
+            </div>
+            <div class="about">
+                <label for="about">Please inform if you have any Covid-symptoms. </label><br>
+                <textarea name="about" cols="50" rows="5" id="about"></textarea>
+            </div>
+            <div class="buttons">
+                <input type="reset" value="Reset all">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
